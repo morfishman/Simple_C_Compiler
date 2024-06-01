@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LexicalAnalyzer" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEIAAAAAAACAAAAAAAAQAAAAAAAABAAAAAIAAAAKAAA=</HashCode>
+      <FileName>LexicalAnalyzer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LexicalAutomaton" Collapsed="true">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAIQAgEAAAAEAAAAACYgAAAAAAACA=</HashCode>
+      <FileName>LexicalAutomaton.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Token" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQABAAEAACAAAAAAAAAAAQAAAAAAAAACAQABAAA=</HashCode>
+      <FileName>Token.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParseNodeData" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ParserTree.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NonTerminalData" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAEAAAAAEQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ParserTree.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TreeNode" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>ParserTree.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParseTreeNode" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQQAAABgAAAAkQAMJAAAwAAERABAQAAAEAQAAAAgAA=</HashCode>
+      <FileName>ParserTree.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParseTree" Collapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUAAAAAAAgAAAAQAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ParserTree.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Parser" Collapsed="true">
+    <Position X="8" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIgCAAAAAAAAAACEAAAAAAAAAAAIBAAAAAAAAAAQAA=</HashCode>
+      <FileName>Parser.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParseTreeNodeStack" Collapsed="true">
+    <Position X="13.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAIgAAAAAAAAAAAAIAAAAQAI=</HashCode>
+      <FileName>ParserStack.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParserTable" Collapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAEAAAgAAAAABAgAAAAAAASAA=</HashCode>
+      <FileName>ParserTable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SymanticAnalaser" Collapsed="true">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIDHAAQEAAEEAACCEICQQHMGAQRAABDkAQtEgCAAKA=</HashCode>
+      <FileName>SymanticAnalayser.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GenericSymbal" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAACAAAAAAAgIAAAAAIFAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SymbalTable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Identifer" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>SymbalTable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Function" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>SymbalTable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SymbalTable" Collapsed="true">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAgAACAApgAAAAAAAAACQAABGQQMACAAAIAIAAA=</HashCode>
+      <FileName>SymbalTable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Register" Collapsed="true">
+    <Position X="8" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAEAAAAAAAAAAAAACAAAAAAQAAABAAAAQAAAACAARAA=</HashCode>
+      <FileName>CodeGenerator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Code_Generator" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQ4RMADRgAgEBCIIAGJiRRSBCgQBBAOCSXEhCAKQCQg=</HashCode>
+      <FileName>CodeGenerator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Error_heandler" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAIAAAAAAAAAAIAAAAAAAgAAQAAAAACAAAAAAAAQA=</HashCode>
+      <FileName>_ErrorHeandlerPreset.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="ProductionRule" Collapsed="true">
+    <Position X="9.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProductionRule.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Action" Collapsed="true">
+    <Position X="8" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ParserTable.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="TokenType" Collapsed="true">
+    <Position X="8" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oEJSOCQBKxUVYJCE6EOgCACCILULKfASIABgUCDKARk=</HashCode>
+      <FileName>_TokenDefinitions.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="NonTerminal" Collapsed="true">
+    <Position X="11.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIRHAAQAAQEBAAACAIAYABIgAQRBABCkAYvkwCUIIA=</HashCode>
+      <FileName>ParserPreset.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ActionType" Collapsed="true">
+    <Position X="8" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAAAAACAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ParserPreset.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SymbolType" Collapsed="true">
+    <Position X="13.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>ParserPreset.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Error_Type" Collapsed="true">
+    <Position X="9.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAIAAIACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>_ErrorHeandlerPreset.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

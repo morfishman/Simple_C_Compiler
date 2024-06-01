@@ -1,0 +1,145 @@
+S -> PROGRAM
+PROGRAM -> PROGRAM FUNCTION
+PROGRAM -> FUNCTION
+
+
+FUNCTION -> RETURN_FUNC
+FUNCTION -> NONE_RETURN_FUNC
+
+RETURN_FUNC -> RETURN_FUNC_HEAD SCOPE
+NONE_RETURN_FUNC -> NONE_RETURN_FUNC_HEAD SCOPE
+
+
+RETURN_STMT -> return computing_expretion
+SCOPE -> { BLOCK }
+SCOPE -> { }
+BLOCK -> STMT BLOCK
+BLOCK -> STMT 
+STMT -> LINE_STMT ;
+STMT -> CONTROL_STATEMENT
+STMT -> RETURN_STMT ;
+STMT -> FUNC_CALL ;
+
+LINE_STMT -> ASSIGN
+LINE_STMT -> FUNC_CALL
+LINE_STMT -> VAL_CHANGE_TYPE
+LINE_STMT -> LINE_STMT , ASSIGN
+LINE_STMT -> LINE_STMT , VAL_CHANGE_TYPE
+LINE_STMT -> LINE_STMT , FUNC_CALL
+
+
+CONTROL_STATEMENT -> IF_STATEMENT
+CONTROL_STATEMENT -> WHILE_STATEMENT
+CONTROL_STATEMENT -> FOR_STATEMENT
+CONTROL_STATEMENT -> IF_ELSE_STATEMENT
+
+IF_STATEMENT -> if ( CONTROL_EXP ) SCOPE
+IF_ELSE_STATEMENT -> if ( CONTROL_EXP ) SCOPE else SCOPE
+
+WHILE_STATEMENT -> while ( CONTROL_EXP ) SCOPE 
+
+FOR_STATEMENT -> for ( FOR_EXP FOR_EXP CONTROL_EXP ) SCOPE
+FOR_STATEMENT -> for ( FOR_EXP FOR_EXP ) SCOPE
+
+
+
+TYPE_CONTROL_EXP -> ASSIGN
+TYPE_CONTROL_EXP -> VAL_CHANGE_TYPE
+TYPE_CONTROL_EXP -> computing_expretion
+TYPE_CONTROL_EXP -> FUNC_CALL
+CONTROL_EXP -> TYPE_CONTROL_EXP
+CONTROL_EXP -> TYPE_CONTROL_EXP , CONTROL_EXP
+FOR_EXP -> CONTROL_EXP ;
+FOR_EXP -> ;
+ 
+
+
+
+VAL_CHANGE_TYPE -> id VAL_CHANGE_OP computing_expretion
+VAL_CHANGE_TYPE -> PRE_ONARY_ARITMATIC
+VAL_CHANGE_TYPE -> POST_ONARY_ARITMATIC
+VAL_CHANGE -> VAL_CHANGE_TYPE
+VAL_CHANGE -> VAL_CHANGE_TYPE , VAL_CHANGE
+VAL_CHANGE_OP -> +=
+VAL_CHANGE_OP -> -=
+VAL_CHANGE_OP -> *=
+VAL_CHANGE_OP -> /=
+VAL_CHANGE_OP -> %=
+ONARY_CHANGE_OP -> --
+ONARY_CHANGE_OP -> ++
+
+
+
+DECLERATION -> RETURN_TYPE id 
+DECLERATION -> NONE_RETURN_TYPE id  
+
+ASSIGN -> id = computing_expretion
+ASSIGN -> DECLERATION = computing_expretion 
+ASSIGN_OR_DEC -> DECLERATION
+ASSIGN_OR_DEC -> ASSIGN
+ASSIGN_OR_DEC -> ASSIGN_OR_DEC , ASSIGN
+ASSIGN_OR_DEC -> ASSIGN_OR_DEC , DECLERATION
+
+
+computing_expretion -> bool_expretion 
+computing_expretion -> aritmatic 
+
+
+bool_expretion -> bool_cmp boolean_combo bool_cmp 
+bool_expretion -> bool_expretion boolean_combo bool_cmp
+bool_expretion -> bool_cmp 
+
+bool_cmp -> bool_cmp boolean_compersion expr 
+bool_cmp -> expr boolean_compersion expr
+bool_cmp -> expr
+
+expr -> bool_expr
+expr -> aritmatic
+bool_expr -> ! aritmatic
+
+aritmatic -> aritmatic + T
+aritmatic -> aritmatic - T
+aritmatic -> T
+T -> T * F
+T -> T / F
+T -> T % F
+T -> F
+F -> ( aritmatic )
+F -> PRE_ONARY_ARITMATIC
+F -> POST_ONARY_ARITMATIC
+F -> id
+F -> numeric
+F -> FUNC_CALL
+F -> literal
+
+PRE_ONARY_ARITMATIC -> id ONARY_CHANGE_OP
+POST_ONARY_ARITMATIC -> ONARY_CHANGE_OP id
+
+boolean_compersion -> !=
+boolean_compersion -> ==
+boolean_compersion -> >=
+boolean_compersion -> <=
+
+boolean_combo -> &&
+boolean_combo -> ||
+
+
+
+
+FUNC_CALL -> id ( )
+FUNC_CALL -> id ( PASS_PARAM )
+
+PASS_PARAM -> computing_expretion
+PASS_PARAM -> computing_expretion , PASS_PARAM
+
+RETURN_FUNC_HEAD -> RETURN_TYPE id ( PARAMS )
+RETURN_FUNC_HEAD -> RETURN_TYPE id ( )
+NONE_RETURN_FUNC_HEAD -> NONE_RETURN_TYPE id ( PARAMS )
+NONE_RETURN_FUNC_HEAD -> NONE_RETURN_TYPE id ( )
+
+PARAMS -> DECLERATION
+PARAMS -> PARAMS , DECLERATION
+
+RETURN_TYPE -> int
+RETURN_TYPE -> char
+NONE_RETURN_TYPE -> void

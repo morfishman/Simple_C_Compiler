@@ -1,0 +1,39 @@
+int factorial(int n) {
+    char one = 1;
+    char zero = 0;
+    
+    if (n == zero) {
+        return one;
+    } else {
+        return n * factorial(n - one);
+    }
+}
+
+void printInt(int number){
+	if(number != 0){
+		printInt(number/10);
+		print_c(number%10 + '0');
+	}
+}
+int getInt(){
+	int num = get_c();
+	while(int temp = get_c(), temp >= 0 && temp <= 9){
+		num *= 10;
+		num += temp;
+	}
+	return num;
+	
+}
+
+int main() {
+
+     
+	while(char number = getInt(), number >= 0){
+		int result = factorial(number);
+		 printInt(result);
+		 print_c(13);
+		 print_c(10);
+	}
+
+    return 0;
+}
